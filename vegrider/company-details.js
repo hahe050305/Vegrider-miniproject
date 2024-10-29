@@ -11,10 +11,10 @@ const CompanyDetails = () => {
 
     return (
         <div className="company-details-page">
-            {/* Back Button */}
+         
             <button className="back-button" onClick={() => window.location.href='/company_search'}>Back</button>
 
-            {/* Main Company Card */}
+       
             <div className="company-card main-card">
                 <img src="/images/blue_dart.jpg" alt="Company Logo" className="company-logo" />
                 <div className="company-info">
@@ -28,7 +28,6 @@ const CompanyDetails = () => {
 </p>
                 </div>
 
-                {/* Social Media Links */}
                 <div className="social-links">
                     <a href="https://www.instagram.com/official_bluedart" target="_blank" rel="noopener noreferrer">
                         <img src="/images/insta.jpg" alt="Instagram" className="social-icon" />
@@ -47,17 +46,14 @@ const CompanyDetails = () => {
                 <button className="book-now" onClick={() => window.location.href='/shipment'}>BOOK</button>
             </div>
 
-            {/* Related Companies Button */}
+        
             <button className="related-companies-toggle" onClick={handleRelatedCompaniesToggle}>
                 {showRelatedCompanies ? "Hide Related Companies" : "Show Related Companies"}
             </button>
 
-            {/* Related Companies Section (conditionally rendered) */}
             {showRelatedCompanies && (
                 <div className="related-companies">
-                    {/* Scrollable Container for Related Company Cards */}
                     <div className="related-companies-list">
-                        {/* First Related Company Card */}
                         <div className="company-card">
                             <img src="/images/delhivery.jpg" alt="Company Logo" className="company-logo" />
                             <div className="company-info">
@@ -87,7 +83,6 @@ const CompanyDetails = () => {
                             <button className="book-now" onClick={() => window.location.href='/shipment'}>BOOK</button>
                         </div>
 
-                        {/* Add more related company cards here */}
                         <div className="company-card">
                             <img src="/images/dhl.jpg" alt="Company Logo" className="company-logo" />
                             <div className="company-info">

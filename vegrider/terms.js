@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './terms.css'; // New CSS file for this page
+import './terms.css'; 
 
 const TAC = () => {
   const [agreed, setAgreed] = useState(false);
@@ -8,9 +8,9 @@ const TAC = () => {
 
   const handleAgree = () => {
     if (agreed) {
-      // Proceed to the next page or action
+  
       alert('Thank you for agreeing!, Your request is sent and it is within consideration for approval.');
-      //navigate('/next-page'); // Adjust the path based on your app
+ 
     } else {
       alert('Please agree to the terms and conditions before proceeding.');
     }
